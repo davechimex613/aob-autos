@@ -522,22 +522,22 @@ export default function Home() {
     <div className="aob-action-content">
       <span className="aob-action-kicker">BUY A CAR</span>
       <h2>Find Your Next Vehicle</h2>
-      <p>Browse our carefully selected inventory and find a vehicle that fits your taste, lifestyle and budget.</p>
+      <p>Explore the full range, prices and offers</p>
       <span className="aob-action-link">Explore Inventory <ArrowRight size={16} /></span>
     </div>
     <div className="aob-car-glow" />
-    <img src="https://pngimg.com/d/mercedes_PNG80149.png" alt="Mercedes-Benz vehicle" className="aob-cutout-car aob-buy-car" />
+    <img src="/aob-buy-cutout.jpg" alt="Mercedes-Benz vehicle" className="aob-cutout-car aob-buy-car" />
   </a>
 
   <a href="/sell-car" className="aob-action-card aob-sell-card" id="sell">
     <div className="aob-action-content">
       <span className="aob-action-kicker">SELL YOUR CAR</span>
       <h2>Get Your Car Sold</h2>
-      <p>Thinking of selling? Tell us about your vehicle and let AOB help you connect it with the right buyer.</p>
+      <p>Certified quality, ready to drive</p>
       <span className="aob-action-link">Start Selling <ArrowRight size={16} /></span>
     </div>
     <div className="aob-car-glow" />
-    <img src="https://pngimg.com/d/land_rover_PNG40.png" alt="Range Rover vehicle" className="aob-cutout-car aob-sell-car" />
+    <img src="/aob-sell-cutout.png" alt="Range Rover vehicle" className="aob-cutout-car aob-sell-car" />
   </a>
 </section>
 <section className="inventory-section" id="inventory">

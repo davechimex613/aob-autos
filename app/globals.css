@@ -1983,7 +1983,7 @@ button {
 
 .aob-sell-car {
   width: 50%;
-  right: -3%;
+  right: 1%;
 }
 
 .aob-action-card:hover .aob-cutout-car {
@@ -3797,4 +3797,104 @@ button {
 }
 .cta-section .cta-inner p {
   margin: 18px 0 22px;
+}
+/* MOBILE ACTION CARDS - FIXED HEIGHT AND SPACING */
+@media (max-width: 850px) {
+  .aob-action-panel {
+    height: auto !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(300px, auto));
+    overflow: hidden;
+    margin-bottom: 65px;
+  }
+
+  .aob-action-card {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .aob-action-content {
+    padding: 36px 25px;
+  }
+
+  .aob-action-card p {
+    font-size: 13px;
+    line-height: 1.65;
+    max-width: 300px;
+  }
+
+  .aob-action-kicker {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .aob-action-panel {
+    width: calc(100% - 26px);
+  }
+
+  .aob-action-card {
+    height: 310px;
+    min-height: 310px;
+  }
+
+  .aob-action-content {
+    width: 67%;
+    padding: 35px 22px;
+  }
+
+  .aob-action-card h2 {
+    font-size: 30px;
+  }
+
+  .aob-action-card p {
+    font-size: 13px;
+  }
+
+  .aob-cutout-car {
+    max-height: 175px;
+  }
+}
+
+/* MOBILE HERO - SHOW MORE OF THE ORIGINAL PHOTO */
+@media (max-width: 520px) {
+  .aob-hero-bg {
+    background-size: contain !important;
+    background-position: center center !important;
+    background-color: #08121d;
+    transform: none !important;
+  }
+
+  .aob-hero {
+    background-color: #08121d;
+  }
+}
+/* FINAL AOB CARD IMAGE POSITIONING */
+.aob-cutout-car {
+  right: 2%;
+  bottom: 8px;
+}
+
+.aob-buy-car {
+  right: 2%;
+}
+
+.aob-sell-car {
+  right: 5%;
+}
+
+@media (max-width: 520px) {
+  .aob-cutout-car {
+    right: -4%;
+    bottom: 8px;
+  }
+
+  .aob-buy-car {
+    right: -4%;
+  }
+
+  .aob-sell-car {
+    right: 0%;
+  }
 }
